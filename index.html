@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    </link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Nagda</title>
+    <script type="text/javascript">
+        function validate(){
+            var username = document.getElementById("name");
+            var mess = document.getElementById("message");
+            var number = document.getElementById("mobile");
+
+            if(number.value.trim().length<10){
+                alert("Wrong Mobile No.");
+                return false;
+            }
+            else{
+                true;
+            }
+            if(number.value.trim().length>10){
+                alert("Wrong Mobile No.");
+                return false;
+            }
+            else{
+                true;
+            }
+
+            if(username.value.trim() =="" || mess.value.trim() =="")
+            {
+                alert("No blank value Allowed");
+                return false;
+            }
+            else{
+                true;
+                alert("thank for submit")
+            }
+
+        }
+
+        
+    </script>
+    <style>
+        /* <----------------- All Body -----------------> */
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
+            background-size: cover;
+            margin: 1%;
+        }
+
+        .main {
+            text-align: center;
+            align-items: center;
+        }
+
+        /* <----------- navigation ------------> */
+        .navigation img {
+            display: inline-flex;
+            width: 5%;
+            border-radius: 50%;
+            margin-left: 5%;
+            margin-top: 1%;
+        }
+
+        .navigation h1 {
+            display: inline-flex;
+            color: white;
+            margin-top: 2%;
+            margin-left: 4%;
+        }
+
+        /* <---------------- about ---------------> */
+        .me img {
+            width: 10%;
+            border-radius: 57%;
+        }
+
+        .me {
+            margin: 3%;
+            color: white;
+        }
+
+        /* <-------------- project -------------> */
+        .projects img {
+            border-radius: 3%;
+            background-color: violet;
+            width: 15%;
+            margin: auto;
+        }
+        .projects img:hover{
+            width: 15.2%;
+        }
+
+        /* <------------ Social Media -------------> */
+        .social img {
+            display: inline-block;
+            width: 5%;
+            border-radius: 50%;
+        }
+
+        /* <------------ contact -----------------> */
+        textarea {
+            width: 25%;
+            height: 90px;
+            background-color: black;
+            color: white;
+            font-size: larger;
+            border-radius: 1%;
+        }
+
+        input {
+            width: 25%;
+            height: 36px;
+            background-color: black;
+            color: white;
+            font-size: large;
+            border-radius: 1%;
+        }
+
+        button {
+            height: 45px;
+            width: 13%;
+            background-color: black;
+            color: white;
+            border-radius: 9%;
+            margin-right: 12%;
+            font-size: large;
+        }
+
+        button:hover {
+            background-color: aqua;
+            cursor: pointer;
+            border: 3px solid silver;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <a href="/index"><img src="logo.jpg" alt=""></a>
+        <h1>Shubham Nagda</h1>
+        <hr>
+    </div>
+    <div class="main">
+        <h1 style="color: white;">Hi,my name is Shubham ...</h1><br>
+        <h2 style="color: aqua;">About Me <br> ¯¯¯¯¯¨¯¯¯¯¯</h2>
+
+        <div class="me">
+            <img src="logo.jpg">
+            <h1>Shubham Nagda</h1>
+            <h3>Hi, I'm Shubahm, I am a first year BCA student. I code mainly in HTML, CSS and JavaScript.</h3>
+        </div><br><br>
+
+        <div class="design">
+            <h2 style="color: aqua;">Projects <br> ¯¯¯¯¨¯¯¯¯</h2>
+        </div>
+        <div class="projects">
+            <a href="/Form"><img src="form.png" alt=""></a>
+            <a href="/table"><img src="table.png" alt=""></a>
+        </div>
+        <div class="design">
+            <h2 style="color: aqua;">Contact Me <br> ¯¯¯¯¯¨¯¯¯¯¯</h2>
+        </div>
+        <form onsubmit="return validate()" action="mail.php" method="post">
+            <input id="name" type="text" placeholder="Your Name"><br><br>
+            <input id="mobile" type="text" placeholder="Mobile No."><br><br>
+            <input id="email" type="email" placeholder="e-mail"><br><br>
+            <textarea name="" id="message" cols="30" rows="10" placeholder=" Your Message"></textarea><br><br>
+            <button >Send Message</button>
+        </form> <br>
+        <div class="design">
+            <h2 style="color: aqua;">Social Media <br> ¯¯¯¯¯¯¨¯¯¯¯¯¯</h2>
+        </div>
+        <div class="social">
+            <a href="https://github.com/ShubhamNagda"><img
+                    src="https://cdn.pixabay.com/photo/2021/09/11/12/17/github-6615451_960_720.png"></a>
+            <a href=" https://www.instagram.com/invites/contact/?i=12r1x58nuftpg&utm_content=3wuq4t1"><img
+                    src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_960_720.jpg"></a>
+            <a href="https://twitter.com/Shubham_Nagda01?t=oNci44wAktEQY8DbQCvKKA&s=09"><img
+                    src="https://cdn.pixabay.com/photo/2015/03/10/17/30/twitter-667462_960_720.png" alt=""></a>
+        <a href=""><img src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_960_720.png" alt=""></a>
+        </div>
+    </div>
+</body>
+
+</html>
