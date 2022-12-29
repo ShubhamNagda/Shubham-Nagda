@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="logo.jpg">
+    </link>
+    <title>Form</title>
+    <style>
+        body {
+            margin: 3%;
+            background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
+            background-size: cover;
+            color: antiquewhite;
+        }
+
+        .head img {
+            width: 4%;
+            display: inline-block;
+            border-radius: 60%;
+            margin-left: 2%;
+        }
+
+        legend {
+            text-align: center;
+        }
+
+        .page {
+            margin-left: 43%;
+        }
+
+        button:hover {
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+
+        .github img {
+            width: 3%;
+            margin-left: 70%;
+            border-radius: 50%;
+        }
+
+        .head h1 {
+            display: inline-block;
+            color: aqua;
+            font-style: italic;
+            margin-left: 4%;
+        }
+
+        .head h2 {
+            display: inline-block;
+            color: white;
+            font-style: italic;
+            margin-left: 9%;
+        }
+        .Submit button{
+            color: antiquewhite;
+            background-color: blue;
+            height: 0%;
+        }
+        .Submit button:hover{
+            background-color: aqua;
+
+        }
+        .head h2:hover {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <a href="index.html"><img src="logo.jpg" alt=""></a>
+        <h1>Shubham Nagda..</h1>
+        <a href="/index">
+            <h2>Home</h2>
+        </a>
+        <a href="/project">
+            <h2>My Project</h2>
+        </a>
+        <a href="/contact">
+            <h2>Contact</h2>
+        </a>
+    </div>
+    <hr>
+    <div class="github">
+        <a href="https://github.com/ShubhamNagda"><img
+                src="https://cdn.pixabay.com/photo/2021/09/11/12/17/github-6615451_960_720.png"></a>
+    </div>
+    <div class="box">
+        <form>
+            <fieldset>
+                <legend>Information Form</legend>
+                <div class="page">
+                    <lable for="fname">Your Name:</lable><br>
+                    <input type="text" placeholder=" Enter your First Name" required> </input><br><br>
+                    <lable for="lname"></lable>
+                    <input type="text" placeholder="Enter your last Name" required> </input> <br><br>
+                    <lable for="password">Password:</lable><br>
+                    <input type="password" placeholder="Enter Your password" required> </input> <br><br>
+                    <lable>Gender:</lable>
+                    <input type="radio" name="gender" value="male" required>Male</input>
+                    <input type="radio" name="gender" value="female" required>Female</input><br><br>
+                    <lable>Dob:</lable>
+                    <input type="date" required><br><br>
+                    <lable for="city">Select city You wan't:</lable><br>
+                    <input type="checkbox" name="city" value="City1">City1</input>
+                    <input type="checkbox" name="city" value="City2">City2</input> <br><br>
+                    <lable for="mobilenumber"> Mobile Number:</lable><br>
+                    <select>
+                        <option value="+91">+91</option>
+                        <option value="+92">+92</option>
+                        <option value="+93">+93</option>
+                        <option value="+94">+94</option>
+                        <option value="+95">+95</option>
+                        <option value="+96">+96</option>
+                    </select>
+                    <br>
+                    <input type="text" placeholder="Enter your Mobile Number" required></input> <br><br>
+                    <lable for="e-mail">E-mail:</lable><br>
+                    <input type="email" placeholder="example1@gmail.com" required></input> <br><br>
+                    <label for="address">Address:</label><br>
+                    <textarea placeholder="Your Address"></textarea> <br><br>
+                    <button onclick="alert('Cancel Successfully')">Cancel</button>
+                    <span class="Submit"> <button onclick="alert('Do you want to submit')">Submit</button></span>
+                    <button onclick="alert('Preview')">Preview</button>
+                    <br><br>
+                </div>
+                </feildset>
+        </form>
+    </div>
+    <pre>
+    <span><!</span>
+    <span>DOCTYPE html</span>
+    <span>></span>
+    </pre>
+    <hr>
+    <a href="https://github.com/ShubhamNagda">
+        <p style="text-align: center">Source Code is on my GitHub account</p>
+    </a>
+
+</body>
+
+</html>
