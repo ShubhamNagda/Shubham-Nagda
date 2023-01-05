@@ -8,12 +8,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shubham Nagda</title>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script type="text/javascript">
         function validate() {
             var username = document.getElementById("name");
             var mess = document.getElementById("message");
             var number = document.getElementById("mobile");
-            
+            var btn = document.getElementById('btn');
+            btn.addEventListener('click', function (e) {
+                e.preventDefault()
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "username",
+                    Password: "password",
+                    To: 'them@website.com',
+                    From: "you@isp.com",
+                    Subject: "This is the subject",
+                    Body: "And this is the body"
+                }).then(
+                    message => alert(message)
+                );
+
+            })
+
             if (number.value.trim() == "") {
                 alert("No blank value Allowed");
                 return false;
@@ -21,7 +40,6 @@
             else {
                 true;
             }
-
             if (number.value.trim().length < 10) {
                 alert("Wrong Mobile No.");
                 return false;
@@ -53,9 +71,9 @@
     <style>
         /* <----------------- All Body -----------------> */
         body {
-            background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
-            background-size: cover;
-            margin: 1%;
+            /* background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
+            background-size: cover; */
+            background-color: rgb(16, 16, 16);
         }
 
         .main {
@@ -64,19 +82,55 @@
         }
 
         /* <----------- navigation ------------> */
-        .navigation img {
-            display: inline-flex;
-            width: 5%;
-            border-radius: 50%;
-            margin-left: 5%;
-            margin-top: 1%;
+        .navigation {
+            padding: 10px 10%;
         }
 
-        .navigation h1 {
-            display: inline-flex;
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 90px;
+            border-radius: 70px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
             color: white;
-            margin-top: 2%;
-            margin-left: 4%;
+            text-decoration: none;
+            font-size: 22px;
+            position: relative;
+
+        }
+
+        /* nav ul li a:hover{
+            color: white;
+            font-size: 28.6px;
+        } */
+        nav ul li a::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.4s;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+
+
         }
 
         /* <---------------- about ---------------> */
@@ -90,7 +144,8 @@
             color: white;
             font-style: italic;
         }
-        .lan img{
+
+        .lan img {
             display: inline-block;
             width: 60px;
             border-radius: 14px;
@@ -99,7 +154,6 @@
         /* <-------------- project -------------> */
         .projects img {
             border-radius: 3%;
-            background-color: violet;
             width: 300px;
             margin: auto;
         }
@@ -131,6 +185,7 @@
             color: white;
             font-size: larger;
             border-radius: 1%;
+            border: 0.01px solid #ff004f;
         }
 
         input {
@@ -140,6 +195,7 @@
             color: white;
             font-size: large;
             border-radius: 1%;
+            border: 0.01px solid #ff004f;
         }
 
         button {
@@ -150,39 +206,48 @@
             border-radius: 5px;
             margin-right: 155px;
             font-size: large;
+            border: 0.01px solid #ff004f;
         }
 
         button:hover {
-            background-color: aqua;
+            background-color: #ff004f;
             cursor: pointer;
-            border: 3px solid silver;
+            border: 1px solid silver;
         }
     </style>
 </head>
 
 <body>
     <div class="navigation">
-        <a href="/index"><img src="logo.jpg" alt=""></a>
-        <h1>Shubham Nagda</h1>
-        <hr>
+        <nav>
+            <img src="logo.jpg" class="logo">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+
     </div>
+    <hr style="margin: 0px 20px;">
     <div class="main">
-        <h1 style="color: white;">Hi, I am <span class="auto-type" style="color: aqua;"></span></h1><br>
+        <h1 style="color: white;">Hi, I am <span class="auto-type" style="color: #ff004f;"></span></h1><br>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script>
-            var typed = new Typed(".auto-type",{
-                strings:["Shubham .."," A Student .."],
-                typeSpeed:120,
-                backSpeed:120,
-                loop:true
+            var typed = new Typed(".auto-type", {
+                strings: ["Shubham ..", " A Student .."],
+                typeSpeed: 120,
+                backSpeed: 120,
+                loop: true
             })
         </script>
+        <h2 style="color: white;" id="about">About Me <br> ¯¯¯¯¯¨¯¯¯¯¯</h2>
 
         <div class="me">
             <img src="logo.jpg">
-            <h1>Shubham Nagda</h1>
-            <h3>Hi, I'm Shubham, I am a first year BCA student. I code mainly in HTML, CSS and JavaScript.</h3>
+            <h1><span style="color: #ff004f;">S</span>hubham Nagda</h1>
 
+            <h3>Hi, I'm Shubahm, I am a first year BCA student. I code mainly in HTML, CSS and JavaScript.</h3>
         </div>
         <div class="lan">
             <img src="https://www.priyansh.xyz/assets/about/skills/HTML.svg" alt="">
@@ -192,7 +257,7 @@
         <br>
 
         <div class="design">
-            <h2 style="color: aqua;">Projects <br> ¯¯¯¯¨¯¯¯¯</h2>
+            <h2 style="color:white;" id="projects">My Projects <br> ¯¯¯¯¨¯¯¯¯</h2>
         </div>
         <div class="projects">
             <a href="/Form"><img src="form.png" alt=""></a>
@@ -200,17 +265,17 @@
             <a href="/image"><img src="gallery.png" alt=""></a>
         </div>
         <div class="design">
-            <h2 style="color: aqua;">Contact Me <br> ¯¯¯¯¯¨¯¯¯¯¯</h2>
+            <h2 style="color:White;" id="contact">Contact Me <br> ¯¯¯¯¯¨¯¯¯¯¯</h2>
         </div>
-        <form onsubmit="return validate()" action="" method="">
+        <form onsubmit="return validate()" method="post">
             <input id="name" type="text" name="name" placeholder="Your Name"><br><br>
             <input id="mobile" type="text" name="mobile" placeholder="Mobile No."><br><br>
             <input id="email" type="email" name="email" placeholder="e-mail"><br><br>
             <textarea name="message" id="message" cols="30" rows="10" placeholder=" Your Message"></textarea><br><br>
-            <button>Send Message</button>
+            <button id="btn">Send Message</button>
         </form> <br>
         <div class="design">
-            <h2 style="color: aqua;">Social Media <br> ¯¯¯¯¯¯¨¯¯¯¯¯¯</h2>
+            <h2 style="color: white;">Social Media <br> ¯¯¯¯¯¯¨¯¯¯¯¯¯</h2>
         </div>
         <div class="social">
             <a href="https://github.com/ShubhamNagda"><img
@@ -219,7 +284,7 @@
                     src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_960_720.jpg"></a>
             <a href="https://twitter.com/Shubham_Nagda01?t=oNci44wAktEQY8DbQCvKKA&s=09"><img
                     src="https://cdn.pixabay.com/photo/2015/03/10/17/30/twitter-667462_960_720.png" alt=""></a>
-            <a href="https://m.facebook.com/100053037720858/"><img src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_960_720.png"
+            <a href=""><img src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_960_720.png"
                     alt=""></a>
         </div>
     </div>
