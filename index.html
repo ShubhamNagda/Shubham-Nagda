@@ -71,9 +71,9 @@
     <style>
         /* <----------------- All Body -----------------> */
         body {
-            /* background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
-            background-size: cover; */
-            background-color: rgb(16, 16, 16);
+            background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
+            background-size: cover;
+            /* background-color: rgb(16, 16, 16); */
         }
 
         .main {
@@ -82,9 +82,6 @@
         }
 
         /* <----------- navigation ------------> */
-        .navigation {
-            padding: 10px 10%;
-        }
 
         nav {
             display: flex;
@@ -93,29 +90,20 @@
             flex-wrap: wrap;
         }
 
-        .logo {
-            width: 90px;
-            border-radius: 70px;
-        }
-
         nav ul li {
             display: inline-block;
             list-style: none;
-            margin: 10px 20px;
+            margin: 5px 5px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-size: 22px;
+            font-size: 18px;
             position: relative;
 
         }
 
-        /* nav ul li a:hover{
-            color: white;
-            font-size: 28.6px;
-        } */
         nav ul li a::after {
             content: '';
             width: 0;
@@ -220,7 +208,6 @@
 <body>
     <div class="navigation">
         <nav>
-            <img src="logo.jpg" class="logo">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">My Projects</a></li>
