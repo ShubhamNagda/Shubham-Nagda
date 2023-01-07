@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9b263138ba.js" crossorigin="anonymous"></script>
     <title>Shubham Nagda</title>
 
     <script src="https://smtpjs.com/v3/smtp.js">
@@ -73,7 +74,10 @@
         body {
             background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
             background-size: cover;
-            /* background-color: rgb(16, 16, 16); */
+            margin: 20px;
+        }
+        html{
+            scroll-behavior: smooth;
         }
 
         .main {
@@ -82,7 +86,9 @@
         }
 
         /* <----------- navigation ------------> */
-
+        .fa-solid{
+            display: none;
+        }
         nav {
             display: flex;
             align-items: center;
@@ -95,11 +101,14 @@
             list-style: none;
             margin: 5px 5px;
         }
+            
+
+
 
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 22px;
             position: relative;
 
         }
@@ -114,11 +123,44 @@
             bottom: -6px;
             transition: 0.4s;
         }
+        nav img{
+            width: 90px;
+            border-radius: 50px;
+        }
+
 
         nav ul li a:hover::after {
             width: 100%;
 
 
+        }
+        @media (max-width:1200px){
+             .fa-solid{
+            display:block;
+            color: white;
+            font-size: 25px;
+        } 
+        nav ul{
+            background: #ff004f;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 100vh;
+            padding-top: 50px;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        nav ul li{
+            display: block;
+            margin: 25px;
+        }
+        nav ul .fa-solid{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            cursor: pointer;
+        }
         }
 
         /* <---------------- about ---------------> */
@@ -202,19 +244,24 @@
             cursor: pointer;
             border: 1px solid silver;
         }
+
+
     </style>
 </head>
 
 <body>
     <div class="navigation">
         <nav>
-            <ul>
+            <img src="logo.jpg" alt="">
+            <ul id="sidemenu">
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#projects"> Projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#social">Social Media</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-
     </div>
     <hr style="margin: 0px 20px;">
     <div class="main">
@@ -262,7 +309,7 @@
             <button id="btn">Send Message</button>
         </form> <br>
         <div class="design">
-            <h2 style="color: white;">Social Media <br> ¯¯¯¯¯¯¨¯¯¯¯¯¯</h2>
+            <h2 style="color: white;" id="social">Social Media <br> ¯¯¯¯¯¯¨¯¯¯¯¯¯</h2>
         </div>
         <div class="social">
             <a href="https://github.com/ShubhamNagda"><img
@@ -275,6 +322,17 @@
                     alt=""></a>
         </div>
     </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu (){
+            sidemenu.style.right ="-300px";
+        }
+    </script>
 </body>
 
 </html>
+
