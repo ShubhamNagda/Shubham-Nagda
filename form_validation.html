@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .con {
+            align-items: center;
+            text-align: center;
+        }
+
+        input {
+            width: 290px;
+            height: 30px;
+            border: 2px solid gray;
+            border-radius: 6px;
+        }
+
+        input:hover {
+            border: 2px solid black;
+        }
+
+        .password {
+            margin-right: 233px;
+        }
+
+        .name {
+            margin-right: 248px;
+        }
+
+        .btn {
+            width: 90px;
+            height: 35px;
+            cursor: pointer;
+            border: none;
+            background-color: rgb(185, 242, 223);
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .btn:hover {
+            background-color: aqua;
+            color: white;
+            border: none;
+        }
+
+        fieldset {
+            margin-top: 8px;
+            margin-left: 464px;
+            margin-right: 475px;
+            padding: 50px;
+        }
+
+        p {
+            color: blue;
+            cursor: pointer;
+        }
+
+        p:hover {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend style="text-align:center;">Form</legend>
+        <div class="con">
+
+            <form onsubmit="validate()">
+                <script>
+                    function validate() {
+                        var name = document.getElementById("Name");
+                        var password = document.getElementById("Password")
+                        if (name.value.trim() == "") {
+                            alert("Please Enter Your Name");
+                            return false;
+                        }
+                        else if (password.value.trim() == "") {
+                            alert("Please Enter Password");
+                            return false;
+                        }
+                        else {
+                            alert("Successfully Submitted")
+                            true;
+                        }
+                    }
+                </script>
+                <label for="Name" class="name">Name:</label><br>
+                <input type="text" id="Name" placeholder="Enter your Name"><br><br>
+
+                <label for="Passward" class="password">Passward:</label><br>
+                <input type="password" name="" id="Password" placeholder="Password:"><br><br>
+                <p onclick='alert("OTP Send to your E-mail")'>forget password</p>
+
+                <input type="submit" value="Login" class="btn" onclick="s()">
+
+            </form>
+        </div>
+    </fieldset>
+</body>
+
+</html>
