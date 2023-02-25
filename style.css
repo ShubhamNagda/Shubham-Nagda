@@ -1,180 +1,159 @@
-        /* <----------------- All Body -----------------> */
-body {
-    background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
-    background-size: cover;
-    margin: 20px;
-}
-html{
-    scroll-behavior: smooth;
-}
+       /* <----------------- All Body -----------------> */
+       body {
+           background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
+           background-size: cover;
+           margin: 20px;
+       }
 
-.main {
-    text-align: center;
-    align-items: center;
-}
+       html {
+           scroll-behavior: smooth;
+       }
 
-/* <----------- navigation ------------> */
-.fa-solid{
-    display: none;
-}
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+       .main {
+           text-align: center;
+           align-items: center;
+       }
 
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 5px 5px;
-}
-    
+       /* <----------- navigation ------------> */
+       .fa-solid {
+           display: none;
+       }
 
+       nav {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           flex-wrap: wrap;
+       }
 
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    position: relative;
-
-}
-
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.4s;
-}
-nav img{
-    width: 90px;
-    border-radius: 50px;
-}
-
-
-nav ul li a:hover::after {
-    width: 100%;
-
-
-}
-@media (max-width:1200px){
-    body {
-
-    background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
-
-    background-size: cover;
-             margin:0px;
+       nav ul li {
+           display: inline-block;
+           list-style: none;
+           margin: 5px 5px;
+       }
 
 
 
-}
-     .fa-solid{
-    display:block;
-    color: white;
-    font-size: 25px;
-} 
-nav ul{
-    background: #ff004f;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-    transition: 0.5s;
-}
-nav ul li{
-    display: block;
-    margin: 25px;
-}
-nav ul .fa-solid{
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-}
-}
 
-/* <---------------- about ---------------> */
-.me img {
-    width: 200px;
-    border-radius: 57%;
-}
+       nav ul li a {
+           color: white;
+           text-decoration: none;
+           font-size: 22px;
+           position: relative;
 
-.me {
-    margin: 3%;
-    color: white;
-    font-style: italic;
-}
+       }
 
-.lan img {
-    display: inline-block;
-    width: 60px;
-    border-radius: 14px;
-}
+       nav ul li a::after {
+           content: '';
+           width: 0;
+           height: 3px;
+           background: #ff004f;
+           position: absolute;
+           left: 0;
+           bottom: -6px;
+           transition: 0.4s;
+       }
 
-/* <-------------- project -------------> */
-.projects ul li{
-    text-align: center;
-    align-items: center;
-    list-style: none;
-}
+       nav img {
+           width: 90px;
+           border-radius: 50px;
+       }
 
 
-/* <------------ Social Media -------------> */
-.social img {
-    display: inline-block;
-    width: 5%;
-    border-radius: 50%;
-}
+       nav ul li a:hover::after {
+           width: 100%;
 
-/* <------------ Social Media -------------> */
-.social img {
-    display: inline-block;
-    width: 7%;
-    border-radius: 50%;
-}
 
-/* <------------ contact -----------------> */
-textarea {
-    width: 345px;
-    height: 90px;
-    background-color: black;
-    color: white;
-    font-size: larger;
-    border-radius: 1%;
-    border: 0.01px solid #ff004f;
-}
+       }
 
-input {
-    width: 345px;
-    height: 46px;
-    background-color: black;
-    color: white;
-    font-size: large;
-    border-radius: 1%;
-    border: 0.01px solid #ff004f;
-}
+       @media (max-width:800px) {
+           body {
 
-button {
-    height: 45px;
-    width: 200px;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    margin-right: 155px;
-    font-size: large;
-    border: 0.01px solid #ff004f;
-}
+               background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
 
-button:hover {
-    background-color: #ff004f;
-    cursor: pointer;
-    border: 1px solid silver;
-}
+               background-size: cover;
+               margin: 0px;
+
+
+
+           }
+
+           .fa-solid {
+               display: block;
+               color: white;
+               font-size: 25px;
+           }
+
+           nav ul {
+               background: #ff004f;
+               position: fixed;
+               top: 0;
+               right: 0;
+               width: 200px;
+               height: 100vh;
+               padding-top: 50px;
+               z-index: 2;
+               transition: 0.5s;
+           }
+
+           nav ul li {
+               display: block;
+               margin: 25px;
+           }
+
+           nav ul .fa-solid {
+               position: absolute;
+               top: 25px;
+               left: 25px;
+               cursor: pointer;
+           }
+           .bmc img{
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+          }
+       }
+
+       /* <---------------- about ---------------> */
+       .me img {
+           width: 200px;
+           border-radius: 57%;
+       }
+
+       .me {
+           margin: 3%;
+           color: white;
+           font-style: italic;
+       }
+
+       .lan img {
+           display: inline-block;
+           width: 60px;
+           border-radius: 14px;
+       }
+
+       /* <-------------- project -------------> */
+       .projects ul li {
+           text-align: center;
+           align-items: center;
+           list-style: none;
+       }
+
+
+       /* <------------ Contact Me -------------> */
+       .Contact img {
+           display: inline-block;
+           width: 5%;
+           border-radius: 50%;
+       }
+      /*<--------------Buy Me a coffee--------->*/
+      .bmc img{
+        width: 180px;
+        height: 60px;
+        border-radius: 11px;
+        background-color: #ff004f;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+      }
+      
