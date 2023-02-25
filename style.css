@@ -1,4 +1,4 @@
-       /* <----------------- All Body -----------------> */
+              /* <----------------- All Body -----------------> */
        body {
            background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
            background-size: cover;
@@ -148,12 +148,22 @@
        }
       /*<--------------Buy Me a coffee--------->*/
       .bmc img{
-        width: 180px;
+        width: 60px;
         height: 60px;
         border-radius: 11px;
-        background-color: #ff004f;
         position: fixed;
         right: 0;
-        bottom: 0;
+        bottom: 24px;
       }
-      
+      .bmctitle{
+        width: 117px;
+        height: 24px;
+        border-radius: 3px;
+        background-color:yellow;
+        position: fixed;
+        right: 0;
+        bottom: 0px;
+        color: black;
+        font-weight: bolder;
+        
+      }
