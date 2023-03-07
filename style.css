@@ -133,6 +133,11 @@
             text-align: center;
             align-items: center;
             list-style: none;
+            
+        }
+        
+        .projects ul li a{
+             text-decoration: none;
         }
  
  
