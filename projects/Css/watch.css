@@ -1,6 +1,6 @@
 #clockimg{
     position: relative;
-    background-image: url("projects/images/clock.png");
+    background-image: url("/projects/images/clock.png");
     background-repeat: no-repeat;
     width: 40vw;
     height: 40vw;
