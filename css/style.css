@@ -1,0 +1,93 @@
+body {
+    margin: 1px;
+    padding: 0px;
+    background-color: rgb(5, 5, 5);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* <-----------------------Navigation--------------------------------> */
+.container nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+.container ul li,
+.container ul li a {
+    list-style: none;
+    display: inline-flex;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-decoration: none;
+    font-size: x-large;
+    color: #ff0077;
+}
+
+.container ul a:hover {
+    color: #ffffff;
+    text-decoration: #ff0077 underline;
+}
+
+/*< ------------------------Header--------------------------------> */
+
+#about {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: underline #ff0077;
+    color: black;
+}
+
+#skill {
+    font-size: larger;
+    color: #ff0077;
+}
+
+.ts h3 {
+    display: inline;
+    border: #ff0077 2px solid;
+    padding-left: 1px;
+    padding-right: 1px;
+    color: #410521;
+}
+
+#icon svg:hover {
+    width: 48px;
+}
+
+main {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.title {
+    color: white;
+}
+#projects a{
+    text-decoration: none;
+
+}
