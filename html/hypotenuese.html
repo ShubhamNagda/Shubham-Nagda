@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypotenuese Calculator</title>
+    <link rel="stylesheet" href="/css/hypotenuese.css">
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="shubhamnagK" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF"
+        data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <style>
+        input {
+            height: 30px;
+            width: 220px;
+        }
+
+        body {
+            align-items: center;
+            text-align: center;
+        }
+
+        button {
+            border: none;
+            height: 30px;
+            background-color: rgb(197, 254, 235);
+            border-radius: 6px;
+
+        }
+
+        button:hover {
+            background-color: aqua;
+            cursor: pointer;
+            border: none;
+            height: 30px;
+            color: white;
+        }
+
+        textarea {
+            font-size: 19px;
+        }
+
+        #ans {
+            border: 0.01px solid rgb(109, 109, 109);
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var p;
+        var q;
+        function hypo(p, q) {
+            function squre(x) {
+                return x * x;
+            }
+            var s = Math.sqrt(squre(p) + squre(q))
+            return s;
+        }
+
+        function ans() {
+            var a = parseFloat(document.getElementById("base").value)
+            var b = parseFloat(document.getElementById("per").value)
+            var t = hypo(a, b)
+            document.getElementById("ans").innerHTML = "Hypo = " + t;
+
+            document.getElementById("sq1").innerHTML = "Squre of Base " + a + " and Perpendicular " + b + " is ";
+            document.getElementById("sq2").innerHTML = a * a + "+" + b * b + "=" + (a * a + b * b);
+            document.getElementById("sq3").innerHTML = "squre root is √" + (a * a + b * b) + " = " + "√" + t + "+" + "√" + t;
+            document.getElementById("sq4").innerHTML = "Answer is = " + t
+        }
+    </script>
+    <script src="/js/hypotenuese.js"></script>
+    <h1 style="text-decoration: underline;">Hypotenuese</h1>
+    <input type="text" id="base" placeholder="Base"> <br><br>
+    <input type="text" id="per" placeholder="Perpendicular"> <br><br>
+    <button onclick="ans()">Find Hypotenuese</button><br><br><br>
+    <span id="ans">Hypotenuese Calculator</span>
+    <br><br><br><br><br>
+    <span id="sq1"></span><br>
+    <span id="sq2"></span><br>
+    <span id="sq3"></span><br>
+    <span id="sq4"></span>
+</body>
+
+</html>
