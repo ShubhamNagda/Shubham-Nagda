@@ -1,0 +1,131 @@
+/* <-----------------------------Tablet------------------------------> */
+@media (max-width:768px) {
+    header {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    #about img {
+        width: 150px;
+        height: 160px;
+        border-radius: 10px;
+    }
+
+    #about h1 {
+        font-size: larger;
+    }
+}
+
+@media (max-width:520px) {
+    #icon a svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width:462px) {
+    #about h1 {
+        font-size: large;
+        color: #ff0077;
+    }
+
+    #skill {
+        font-size: large;
+    }
+}
+
+/* <-----------------------------------------Mobile--------------------------------> */
+
+@media (max-width:448px) {
+    #about h1 {
+        font-size: medium;
+    }
+
+    #icon a svg {
+        width: 27px;
+        height: 27px;
+    }
+
+    #about img {
+        width: 109px;
+        height: 121px;
+        border-radius: 10px;
+    }
+
+    #skill {
+        font-size: medium;
+        font-weight: bold;
+    }
+}
+
+@media (max-width:440px) {
+    .ts h3 {
+        font-size: medium;
+        border: #ff0077 2px solid;
+    }
+
+    .container ul li,
+    .container ul li a {
+        font-size: larger;
+    }
+
+    .container nav h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:421px) {
+    #about h1 {
+        font-size: small;
+    }
+
+    #about img {
+        width: 103px;
+        height: 111px;
+        border-radius: 10px;
+    }
+}
+@media (max-width:418px) {
+    #skill {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:404px) {
+    .container ul li,
+    .container ul li a {
+        font-size: large;
+    }
+
+    .container nav h1 {
+        font-size: large;
+    }
+    .section , h2{
+        font-size: large;
+    }
+}
+@media (max-width:396px) {
+    #skill {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width:380px){
+    .ts h3 {
+        font-size: small;
+        border: #ff0077 2px solid;
+    }
+}
+@media (max-width:375px){
+    #about h1 {
+        font-size:11px;
+    }
+
+    #about img {
+        width: 100px;
+        height: 108px;
+        border-radius: 10px;
+    }
+}
+
