@@ -1,4 +1,9 @@
 /* <-----------------------------Tablet------------------------------> */
+@media (max-width:1183px) {
+     #about img{
+        padding-right: 13px;
+     }
+}
 @media (max-width:768px) {
     header {
         padding-left: 1px;
@@ -56,6 +61,7 @@
         width: 109px;
         height: 121px;
         border-radius: 10px;
+        padding-right: 5px;
     }
 
     #skill {
@@ -152,5 +158,21 @@
 
     .container nav h1 {
         font-size: 16px;
+    }
+}
+
+@media (max-width:291px) {
+
+    .container ul li,
+    .container ul li a {
+        font-size: 12px;
+    }
+
+    .container nav h1 {
+        font-size: 12px;
+        padding-top: 8px;
+    }
+    #about img {
+        padding-right: 2px;
     }
 }
