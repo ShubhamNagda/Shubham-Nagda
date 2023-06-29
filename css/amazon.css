@@ -1,0 +1,524 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #E3E6E6;
+}
+
+.mobile {
+    font-size: 0px;
+}
+
+.container1 {
+    background-color: #131921;
+}
+
+.container1 nav {
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+
+.container1 nav h3 {
+    padding-left: 26px;
+    padding-right: 27px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+form input {
+    width: 550px;
+    height: 38px;
+    border-radius: 9px;
+    border: none;
+    margin-top: 12px;
+}
+
+form img {
+    height: 44px;
+    width: 45px;
+    margin-left: -40px;
+    margin-top: 10px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    background-color: #febd69;
+
+}
+
+form img:hover {
+    cursor: pointer;
+}
+
+.lower {
+    font-size: 14px;
+}
+
+.container2 {
+    display: flex;
+    background-color: #232f3e;
+    color: #fff;
+}
+
+.container2 h3 {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.banner {
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/27/08/51/mobile-phone-1419275_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 330px;
+    margin-top: -20px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.banner h1 {
+    color: #fff;
+    text-align: center;
+    padding-top: 43px;
+}
+
+.contant {
+    display: inline-flex;
+    cursor: pointer;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    width: 320px;
+    text-align: center;
+    margin-left: 9px;
+    padding-bottom: 19px;
+    margin-top: 15px;
+}
+
+.product img {
+    width: 300px;
+}
+
+footer {
+    background-color: #232f3e;
+    margin-top: -14px;
+}
+
+.footer1 {
+    justify-content: space-between;
+    display: flex;
+    color: #fff;
+    padding-left: 14px;
+    padding-right: 24px;
+}
+
+ul li {
+    cursor: pointer;
+    list-style: none;
+    font-family: inherit;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.nav-footer-line {
+    border-top: 1px solid #3a4553;
+    margin-top: 40px;
+}
+
+.lan {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.lan h2 {
+    cursor: pointer;
+    border: 1px solid #bbb;
+    font-size: large;
+    margin-left: 15px;
+    padding: 12px;
+    width: 109px;
+}
+
+.con,
+.con h4 {
+    display: flex;
+    color: #bbb;
+    margin-left: 4px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.back a,
+.back a h3 {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 2px;
+    background-color: #37475A;
+    justify-content: center;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.lowercase {
+    font-size: small;
+}
+
+.footer3 {
+    background-color: #131921;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer3 h4 {
+    padding-left: 149px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.st {
+    display: flex;
+    background-color: #131921;
+    justify-content: center;
+}
+
+.st h5 {
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 4px;
+}
+
+.st1 {
+    display: flex;
+    background-color: #131921;
+    justify-content: center;
+}
+
+.st1 h5 {
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: -23px;
+}
+
+/* <-----------------------------Devices----------------------------> */
+
+@media (max-width:1331px) {
+
+    .product {
+        background-color: #fff;
+        width: 315px;
+        text-align: center;
+        margin-left: 9px;
+        padding-bottom: 19px;
+        margin-top: 15px;
+    }
+
+    .product img {
+        width: 278px;
+    }
+}
+
+@media (max-width:1307px) {
+    .container1 nav h3 {
+        padding-left: 22px;
+        padding-right: 23px;
+        font-size: 13px;
+    }
+
+    .container2 h3 {
+        padding-left: 13px;
+        padding-right: 13px;
+        font-size: 10px;
+    }
+
+    .lower {
+        font-size: 10px;
+    }
+
+    .product {
+        background-color: #fff;
+        width: 313px;
+        text-align: center;
+        margin-left: 9px;
+        padding-bottom: 19px;
+        margin-top: 15px;
+    }
+
+    .product img {
+        width: 278px;
+    }
+}
+
+@media (max-width:1312px) {
+    .product {
+        background-color: #fff;
+        width: 312px;
+        text-align: center;
+        margin-left: 9px;
+        padding-bottom: 19px;
+        margin-top: 15px;
+    }
+
+    .product img {
+        width: 278px;
+    }
+}
+
+@media (max-width:1300px) {
+    .product {
+        background-color: #fff;
+        width: 311px;
+        text-align: center;
+        margin-left: 9px;
+        padding-bottom: 19px;
+        margin-top: 15px;
+    }
+
+    .product img {
+        width: 278px;
+    }
+}
+
+@media (max-width:1295px) {
+    .product {
+        background-color: #fff;
+        width: 310px;
+        text-align: center;
+        margin-left: 9px;
+        padding-bottom: 19px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:1291px) {
+    .product {
+        background-color: #fff;
+        width: 309px;
+        text-align: center;
+        margin-left: 9px;
+        padding-bottom: 19px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:1024px) {
+    .container1 nav h3 {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+    }
+
+    .container2 h3 {
+        padding-left: 9px;
+        padding-right: 9px;
+        font-size: 9px;
+    }
+
+    .lower {
+        font-size: 9px;
+    }
+
+    .product {
+        background-color: #fff;
+        width: 313px;
+        text-align: center;
+        margin-left: 9px;
+        padding-bottom: 19px;
+        margin-top: 15px;
+    }
+
+    .product img {
+        width: 278px;
+    }
+
+    form input {
+        width: 510px;
+        margin-top: 12px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .footer3 h4 {
+        padding-left: 49px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .con {
+        font-size: 12px;
+    }
+
+    form input {
+        width: 300px;
+        margin-top: 12px;
+        height: 30px;
+    }
+
+    .container1 nav h3 {
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 12px;
+    }
+
+    .product {
+        width: 240px;
+    }
+
+    .product img {
+        width: 230px;
+    }
+
+    form img {
+        height: 35px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    footer {
+        visibility: hidden;
+    }
+
+    .footer1 {
+        visibility: hidden;
+    }
+
+    ul li {
+        visibility: hidden;
+    }
+
+    .nav-footer-line {
+        visibility: hidden;
+    }
+
+    .lan {
+        visibility: hidden;
+    }
+
+    .lan h2 {
+        visibility: hidden;
+    }
+
+    .con,
+    .con h4 {
+        visibility: hidden;
+    }
+
+    .back a,
+    .back a h3 {
+        visibility: hidden;
+    }
+
+    .lowercase {
+        visibility: hidden;
+    }
+
+    .footer3 {
+        visibility: hidden;
+    }
+
+    .footer3 h4 {
+        visibility: hidden;
+    }
+
+    .st {
+        visibility: hidden;
+    }
+
+    .st h5 {
+        visibility: hidden;
+    }
+
+    .st1 {
+        visibility: hidden;
+    }
+
+    .st1 h5 {
+        visibility: hidden;
+    }
+
+    .container1 {
+        visibility: hidden;
+    }
+
+    .container1 nav {
+        visibility: hidden;
+
+    }
+
+    .container1 nav h3 {
+        visibility: hidden;
+    }
+
+    form input {
+        visibility: hidden;
+    }
+
+    form img {
+        visibility: hidden;
+
+    }
+
+    form img:hover {
+        visibility: hidden;
+    }
+
+    .lower {
+        visibility: hidden;
+    }
+
+    .container2 {
+        visibility: hidden;
+    }
+
+    .container2 h3 {
+        visibility: hidden;
+
+
+    }
+
+    .banner {
+        visibility: hidden;
+    }
+
+    .banner h1 {
+        visibility: hidden;
+
+    }
+
+    .contant {
+        visibility: hidden;
+
+    }
+
+    .product {
+        visibility: hidden;
+    }
+
+    .product img {
+        visibility: hidden;
+    }
+
+    .mobile {
+        font-size: larger;
+    }
+}
