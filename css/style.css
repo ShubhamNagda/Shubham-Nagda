@@ -67,6 +67,10 @@ nav {
     color: #ff0077;
 }
 
+#skill li {
+    list-style:none;
+}
+
 .ts h3 {
     display: inline;
     border: #ff0077 2px solid;
