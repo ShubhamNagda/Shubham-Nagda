@@ -39,13 +39,16 @@ input {
 
 button img {
   width: 51px;
-  height: 19px;
+  height: 26px;
   padding-top: 2px;
 }
 
 button {
-  border-radius: 50px;
-  padding: 2px;
+  order-radius: 50px;
+    padding: 2px;
+    margin-left: -59px;
+    z-index: 1;
+    position: absolute;
 }
 
 button:hover {
