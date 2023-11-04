@@ -44,7 +44,7 @@ button img {
 }
 
 button {
-  order-radius: 50px;
+  order-radius: 25px;
     padding: 2px;
     margin-left: -59px;
     z-index: 1;
