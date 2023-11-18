@@ -1,0 +1,151 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: color-mix(in srgb, black 85%, red 15%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: black;
+    justify-content: space-around;
+    padding: 6px;
+    text-decoration: none;
+    border-bottom: 2px solid gold;
+}
+
+ul li a {
+    color: gold;
+    font-size: 25px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 0px 2.5px 0px 2.5px;
+    background-color: black;
+}
+.logo{
+    text-decoration: underline rgb(236, 168, 41);
+}
+ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+#sweets {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: #855ecf solid 2px; */
+    margin: 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#snacks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: #13eb13 solid 2px; */
+    margin: 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#fastfood {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: rgb(236, 168, 41) solid 2px; */
+    margin: 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.box {
+    background-color: black;
+    border: 2px solid gold;
+   box-shadow: -10px 0px 15px #3e3d3d;
+}
+
+.bvclr {
+    /* background-color:#7e7ee0; */
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.lgclr {
+    /* background-color:#28d628; */
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.loclr {
+    /* background-color:rgb(236, 168, 41); */
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.box img {
+    width: 285px;
+    height: 190px;
+    /* padding: 12px; */
+    border-bottom: 2px solid gold;
+}
+
+.box h3 {
+    text-align: center;
+    color: gold;
+}
+
+.box h4 {
+    text-align: center;
+    border: 1px solid gray;
+    padding: 2px;
+    margin: 1px 70px 0px 70px;
+    border-radius: 12px;
+    background-color:orangered;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.title {
+    color: gold;
+    background-color: black;
+    text-align: center;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+footer {
+    margin-left: 4px;
+    background-color: black;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: gold;
+}
+
+@media (max-width:597px) {
+    .box img {
+        width: 230px;
+        /* padding: 12px; */
+        border-bottom: 2px solid gold;
+    }
+}
+@media (max-width:487px) {
+    .box img {
+        width: 377px;
+        /* padding: 12px; */
+        border-bottom: 2px solid gold;
+        justify-content: center;
+    }
+}
